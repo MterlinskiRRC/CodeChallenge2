@@ -1,0 +1,8 @@
+import express from 'express';
+import eventRoutes from './api/v1/routes/eventRoutes';
+
+const app = express();
+app.use(express.json());
+app.use('/api/v1', eventRoutes);
+
+export default app;
